@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(139, 29, 212);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  margin-top: 30px;
+  padding: 50px;
+  width: 1000px;
+  height: 90vh;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 20px;
+}
+
+
+.wrap__input__select {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input, select {
+  font-size: 25px;
+  padding: 9px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  border-radius: 10px;
+  border-color:blueviolet;
+}
+
+select,input:focus {
+  outline: none;
+}
+
+#my-canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+button {
+  font-size: 20px;
+  background-color:blueviolet;
+  color: #fff;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+  display: block;
+}
+
+button:hover {
+  background-color: rgb(108, 17, 193);
+}
+
+.output__list {
+  text-align: center;
+  font-size: 30px;
+}
+
+.modal {
+  position: absolute;
+  top: 33%;
+  left: 38%;
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  background-color: rgb(108, 17, 193);
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
