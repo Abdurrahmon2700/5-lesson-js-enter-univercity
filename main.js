@@ -13,6 +13,7 @@ let closeBtn = document.querySelector("#close")
 closeBtn.addEventListener("click", (e) => {
   elModal.style.display = "none";
   elconfetti.style.display = "none"
+  elBtn.style.display = "block"
 })
 
 
@@ -32,6 +33,7 @@ elBtn.addEventListener('click', (e) => {
   let userBall = userInput.value;
   userBall = Number(userBall)
   let univeName = newSelect.value;
+  elBtn.style.display = "none"
   if(isNaN(userBall)) {
     userInput.style.borderColor = 'red'
     userInput.value = "";
