@@ -14,9 +14,10 @@ body {
 }
 
 .wrapper {
+  position: relative;
   margin-top: 30px;
-  padding: 50px;
-  width: 1000px;
+  padding: 20px;
+  width: 400px;
   height: 90vh;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -32,12 +33,15 @@ body {
 }
 
 input, select {
-  font-size: 25px;
+  width: 350px;
   padding: 9px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   border-radius: 10px;
   border-color:blueviolet;
+  font-size: 18px;
 }
+
+
 
 select,input:focus {
   outline: none;
@@ -58,6 +62,13 @@ button {
   padding: 8px 10px;
   border-radius: 10px;
   display: block;
+  /* z-index: 1000; */
+}
+
+#done {
+  position: absolute;
+  top: 14%;
+  right: 20px
 }
 
 button:hover {
@@ -65,22 +76,62 @@ button:hover {
 }
 
 .output__list {
-  text-align: center;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 .modal {
   position: absolute;
-  top: 33%;
-  left: 38%;
-  width: 400px;
-  height: 300px;
-  padding: 20px;
+  top: 25%;
+  left: 18%;
+  width: 250px;
+  height: 200px;
+  padding: 20px 20px;
   background-color: rgb(108, 17, 193);
   border-radius: 10px;
   color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   display: none;
+  transition: all 0.4s ease;
+}
+
+#close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media screen and (max-width: 440px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  #done {
+    position: absolute;
+    top: 20%;
+    right: 20px
+  }
+
+  input, select {
+    max-width: 250px;
+  }
+
+  .modal {
+    top: 27%;
+    left: 40px;
+  }  
+}
+
+@media screen and (max-width: 300px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  input, select {
+    max-width: 150px;
+
+  }
 }

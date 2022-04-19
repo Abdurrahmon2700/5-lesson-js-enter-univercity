@@ -14,13 +14,16 @@
   <div class="container">
     <div class="wrapper">
       <div class="wrap__input__select">
-        <input type="text" id="overall">
-        <select name="" id="select">
-        </select>
+        <form>
+          <input type="text" id="overall" autocomplete="off">
+          <select name="" id="select">
+          </select>
+          <button id="done">Done</button>
+        </form>
       </div>
-      <button id="done">Done</button>
       <div class="modal" id="modal">
-        <output class="output__list" id="output">  
+        <button id="close">X</button>
+        <output class="output__list" id="output"> 
         </output>
       </div>
     </div>
