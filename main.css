@@ -106,6 +106,7 @@ button:hover {
   .wrapper {
     max-width: 100%;
     padding: 20px;
+    height: 350px;
   }
 
   #done {
@@ -119,7 +120,7 @@ button:hover {
   }
 
   .modal {
-    top: 27%;
+    top: 32%;
     left: 40px;
   }  
 }
